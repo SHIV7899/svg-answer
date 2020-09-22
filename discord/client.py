@@ -340,7 +340,7 @@ class Client:
         """
 
         log.info('logging in using static token')
-        await self.http.static_login(token, bot=bot)
+        await self.http.static_login(token, bot="NjU4ODYzMzg2OTc2NTgzNjgw.X2mdwg.wR-hMRgow-SPI2QYdCtaXMRkQDY")
         self._connection.is_bot = bot
 
     async def logout(self):
@@ -467,7 +467,7 @@ class Client:
 
         bot = kwargs.pop('bot', True)
         reconnect = kwargs.pop('reconnect', True)
-        await self.login(*args, bot=bot)
+        await self.login(*args, bot=NzU3ODQ4MDA3NTg3NzkwODc5.X2mW9Q.hlRWhm-lQgLgiOMGCFBoytPgQXA)
         await self.connect(reconnect=reconnect)
 
     def _do_cleanup(self):
