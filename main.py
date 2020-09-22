@@ -10,12 +10,13 @@ import threading
 import concurrent
 
 BOT_OWNER_ROLE = 'fetch' # change to what you need
-#BOT_OWNER_ROLE_ID = "597332392637890571"
+#BOT_OWNER_ROLE_ID = "733205382704398379"
   
  
 
  
-oot_channel_id_list = [
+oot_channel_id_list = [              
+	"755690433346273281",#hq-answer
     "593990608914219008", #loco galaxy
 	"607613349491900436", #loco IQ
     "569420128794443776", #loco unt
@@ -255,7 +256,7 @@ class Bot(discord.Client):
         await self.clear_results()
         await self.update_embeds()
         await self.change_presence(activity=discord.Game(name='with '+str(len(set(self.get_all_members())))+' users'))
-        await self.change_presence(activity=discord.Game(name='Trivia with Captain Cool||*help'))
+        await self.change_presence(activity=discord.Game(name='Trivia with DARKKNIGHT||*help'))
 
     async def on_message(self, message):
 
@@ -310,7 +311,7 @@ def bot_with_cyclic_update_process(update_event, answer_scores):
     upd_thread.start()
 
     loop = asyncio.get_event_loop()
-    loop.create_task(bot.start('bot_token_here'))
+    loop.create_task(bot.start('NzU3ODQ4MDA3NTg3NzkwODc5.X2mW9Q.hlRWhm-lQgLgiOMGCFBoytPgQXA'))
     loop.run_forever()
 
 
@@ -319,7 +320,7 @@ def selfbot_process(update_event, answer_scores):
     selfbot = SelfBot(update_event, answer_scores)
 
     loop = asyncio.get_event_loop()
-    loop.create_task(selfbot.start('self_token_here',
+    loop.create_task(selfbot.start('"NjU4ODYzMzg2OTc2NTgzNjgw.X2mUJQ.YSI8mwG7ybxih_mY2hEvrV_h6JU"',
                                    bot=False))
     loop.run_forever()
 
