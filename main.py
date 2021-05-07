@@ -15,7 +15,8 @@ BOT_OWNER_ROLE = 'Y.A.S.P. BOT' # change to what you need
  
 
  
-oot_channel_id_list = [              
+oot_channel_id_list = [
+	"834720887340924988"
 	"831030092641599498"
 	"831030094377254972"
 	"835790083692167209"
