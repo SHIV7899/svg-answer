@@ -1,6 +1,6 @@
   
 '''
-using discord.py version 3.0.0a
+using discord.py version 1.0.0a
 '''
 import discord
 import asyncio
